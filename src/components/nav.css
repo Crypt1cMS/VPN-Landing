@@ -1,0 +1,51 @@
+.nav-container {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+ul {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: grey;
+    transition: all .500s;
+    padding: 0;
+}
+
+ul li a:hover  {
+    transform: scale(1.2);
+    font-weight: bold;
+    color: black;
+}
+
+.signin-login {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.signin-login a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.signin-login #register {
+    border: 1px solid var(--accent-color);
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: background 0.5s, color 0.5s;
+}
+
+.signin-login #register:hover {
+    background: var(--accent-color);
+    color: white;
+}
