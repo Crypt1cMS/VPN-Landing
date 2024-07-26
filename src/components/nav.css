@@ -1,26 +1,46 @@
 .nav-container {
-    width: 100%;
+    display: flex;
     height: 70px;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.nav-content {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
 }
 
-ul {
+.nav-burger-menu svg {
+    position: absolute;
+    display: none;
+    transition: transform 0.500s;
+    cursor: pointer;
+}
+
+.nav-logo {
+    cursor: pointer;
+}
+
+.nav-burger-menu svg:hover {
+    transform: scale(1.1);
+}
+
+.nav-content ul {
     display: flex;
-    gap: 45px;
+    gap: 3rem;
     list-style: none;
 }
 
-ul li a {
+.nav-content ul li a {
     text-decoration: none;
     color: grey;
     transition: all .500s;
     padding: 0;
 }
 
-ul li a:hover  {
+.nav-content ul li a:hover  {
     transform: scale(1.2);
     font-weight: bold;
     color: black;
@@ -35,7 +55,7 @@ ul li a:hover  {
 .signin-login a {
     text-decoration: none;
     color: var(--accent-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .signin-login #register {
@@ -48,4 +68,81 @@ ul li a:hover  {
 .signin-login #register:hover {
     background: var(--accent-color);
     color: white;
+}
+
+.x-ham-menu {
+    display: flex;
+    padding: 20px 0;
+    padding-left: 80%;
+    display: block;
+    z-index: 10;
+}
+
+.x-ham-menu:hover {
+    transform: scale(1.05);
+}
+
+.ham-menu-off-screen {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 100vh;
+    background: rgb(231, 231, 231);
+    transition: width 0.500s;
+    display: none;
+}
+
+.ham-menu-off-screen ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: .5rem;
+    padding: 0 5px;
+}
+
+.ham-menu-off-screen ul li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 10px;
+    transition: background 0.500s;
+}
+
+.ham-menu-off-screen ul li:hover {
+    background: rgb(245, 245, 245);
+}
+
+.ham-menu-off-screen ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    
+}
+
+.ham-menu-off-screen ul li:hover a{
+    color: var(--accent-color);
+}
+
+@media (max-width: 1030px) {
+
+    .nav-container ul {
+        display: none;
+    }
+    
+    .nav-container .signin-login {
+        display: none;
+    }
+
+    .nav-content {
+        justify-content: center;
+    }
+
+    .nav-burger-menu svg {
+        top: 20px;
+        right: 30px;
+        display: block;
+    }
+
 }
