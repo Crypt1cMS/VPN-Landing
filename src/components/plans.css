@@ -1,0 +1,93 @@
+.plans-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 100px 0;
+}
+
+.plans-container .plans-heading {
+    text-align: center;
+    padding: 0 50px;
+}
+
+.plans-container .plans-grid {
+    width: 100%;
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    padding: 50px 0px;
+    gap: 10px;
+}
+
+.grid-container {
+    border: 2px solid rgb(183, 183, 183);
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+}
+
+.grid-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.plans-img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.grid-content .plans-features-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 225px;
+}
+
+.grid-content .plans-features-list li {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.plans-pricing-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.plans-pricing-button button {
+    border: 2px solid var(--accent-color);
+    border-radius: 50px;
+    background: transparent;
+    padding: 10px 60px;
+    cursor: pointer;
+    transition: background 0.500s, color 0.500s;
+}
+
+.plans-pricing-button button p {
+    color: var(--accent-color);
+}
+
+.plans-pricing-button button:hover p {
+    color: white;
+}
+
+.plans-pricing-button button:hover {
+    background: var(--accent-color);
+}
+
+.plans-pricing-button span {
+    color: grey;
+    font-weight: 500;
+}
