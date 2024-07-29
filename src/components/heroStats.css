@@ -1,0 +1,61 @@
+.heroStats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    width: 80%;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 20px 50px 5px rgba(0, 0, 0, 0.1);
+}
+
+.heroStats-content-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.grid-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+    margin: 30px 0;
+}
+
+#grid-divider {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.grid-text h3 {
+    font-weight: 700;
+}
+
+@media (max-width: 810px) {
+
+    .heroStats-container {
+        max-width: 300px
+    }
+
+    .heroStats-content-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 10px;
+        gap: 10px;
+    }
+
+    #grid-divider {
+        border-right: 0px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);;
+    }
+    
+}

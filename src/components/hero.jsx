@@ -6,7 +6,7 @@ function Hero() {
     
     return(
         <>
-            <div className="hero-container">
+            <section className="hero-container">
 
                 <div className="hero-content-left">
 
@@ -22,7 +22,7 @@ function Hero() {
                     <img src={Heroimg} alt="Hero Image" draggable="false" />
                 </div>
 
-            </div>
+            </section>
         
         </>
 
