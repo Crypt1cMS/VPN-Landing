@@ -14,7 +14,7 @@ function Network() {
             <section className='network-container'>
 
                 <div className="network-heading">
-                    <h3>Huge Global Network of Fast VPN</h3>
+                    <h2>Huge Global Network of Fast VPN</h2>
                     <p>See <span>LaslesVPN</span> everywhere to make it easier for you when you move locations.</p>
                 </div>
 
