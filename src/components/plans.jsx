@@ -151,7 +151,6 @@ function Plans() {
                         </div>
                     </div>
 
-
                 </div>
 
             </section>

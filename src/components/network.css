@@ -1,0 +1,50 @@
+.network-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 50px;
+    overflow: hidden;
+}
+
+.network-heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.network-global-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.network-global-img img {
+    min-width: 325px;
+    object-fit: cover;
+}
+
+.network-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+}
+
+.network-list li img {
+    width: 165px;
+}
+
+@media (max-width: 1000px) {
+    
+
+
+}
