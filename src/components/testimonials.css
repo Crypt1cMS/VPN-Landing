@@ -64,5 +64,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-style: italic;
+    text-align: center;
+    background: rgb(245, 245, 245);
+    border-radius: 10px;
 }
