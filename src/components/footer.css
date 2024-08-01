@@ -1,0 +1,207 @@
+footer {
+    width: 100%;
+    background: rgba(248, 248, 248, 1);
+    padding: 150px 50px 100px 50px;
+    margin: 100px 0 0 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-newsletter {
+    position: absolute;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    top: -300px;
+    border-radius: 15px;
+}
+
+.newsletter-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 60px 100px;
+    height: 100%;
+}
+
+.newsletter-content-left {
+    width: 50%;
+}
+
+.newsletter-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    gap: 10px;
+}
+
+.newsletter-content-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.newsletter-content-right button {
+    width: 300px;
+    color: white;
+    background: var(--accent-color);
+    outline: none;
+    border: none;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px 1px var(--accent-color);
+    font-size: var(--p-font-size);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.500s;
+}
+
+.newsletter-content-right button:hover {
+    transform: scale(1.05);
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+}
+
+.footer-content-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-VPN-info {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content-VPN-info img {
+    width: 175px;
+}
+
+.content-VPN-info span {
+    font-weight: bold;
+}
+
+.VPN-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 0 0;
+}
+
+.VPN-social-media img {
+    cursor: pointer;
+    transition: transform 0.500s;
+    max-width: 100px;
+}
+
+.VPN-social-media img:hover {
+    transform: scale(1.05);
+} 
+
+.content-VPN-info #stamp {
+    color: grey;
+}
+
+.footer-content-right {
+    width: 50%;
+}
+
+.footer-lists {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-product-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.footer-product-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-product-list ul li p {
+    cursor: pointer;
+    font-weight: 400;
+    transition: transform 0.500s;
+}
+
+.footer-product-list ul li p:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+
+    .footer-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .content-VPN-info {
+        width: 100%;
+        max-width: none;
+        align-items: center;
+    }
+
+    .footer-lists {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+}
+
+@media (max-width: 915px) {
+
+    footer {
+        padding: 200px 50px 100px 50px;
+        margin: 175px 0 0 0;
+    }
+
+    .footer-newsletter {
+        top: -450px;
+    }
+
+    .newsletter-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 0px;
+    }
+
+    .newsletter-text {
+        text-align: center;
+        max-width: none;
+        width: 100%;
+    }
+
+    .newsletter-content-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -109,7 +109,7 @@ function Testimonials() {
                                     </div>
 
                                     <div className="testimonial-profile-text">
-                                        <h4>Kim Young Jou</h4>
+                                        <h4>Kim Young</h4>
                                         <p>Seoul, South Korea</p>
                                     </div>
                                 </div>

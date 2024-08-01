@@ -6,6 +6,8 @@ import Features from './components/herofeatures'
 import Plans from './components/plans'
 import Network from './components/network'
 import Testimonials from './components/testimonials'
+import Newsletter from './components/newsletter'
+import Footer from './components/footer'
 
 
 function App() {
@@ -17,10 +19,13 @@ function App() {
           <Hero/>
             <HeroStats/>
               <Features/>
-                  <Plans/>
-                    <Network/>
-                      <Testimonials/>
+              <Plans/>
+            <Network/>
+          <Testimonials/>
+        <Newsletter/>
       </div>
+      
+      <Footer/>
     </>
   )
 }
